@@ -1,0 +1,19 @@
+# This program runs on the following conditions
+# Given an integer, n, perform the following conditional actions:
+# ---------------------------------------------------------------------------
+# If n is odd, print Weird
+# If n is even and in the inclusive range of 2 to 5, print Not Weird
+# If n is even and in the inclusive range of 6 to 20, print Weird
+# If n is even and greater than 20, print Not Weird
+# ---------------------------------------------------------------------------
+# 1 <= n <= 100
+
+p = int(input())                                  # get input and convert it into an integer form
+flag = {True: "Not Weird", False: "Weird"}        #create a dictionary named 'flag', where the variables in it have values
+
+# Now print the value of the dictionary
+print(flag[             
+          p%2 == 0 
+          and 
+          (p in range(2,6) or p > 20)
+    ])
