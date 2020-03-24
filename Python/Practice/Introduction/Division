@@ -1,0 +1,16 @@
+# This program works on the following conditions
+# ------------------------------------------------------------------------------------------------
+# Read two integers and print two lines. The first line should contain integer division,  a//b . 
+# The second line should contain float division,  a/b .
+# You don't need to perform any rounding or formatting operations.
+# ------------------------------------------------------------------------------------------------
+
+a = int(input())          # get an input convert it into an integer form
+b = int(input())          # get an input convert it into an integer form
+
+# print the values of integer division (division) and float division (floor division)
+# {}.format(value) is used to print multiple values in a string.
+# Here, the values in the curly braces / placeholders(in this case) indicate the order in which the values should be printed.
+# There is no need to put a value in the placeholder. 
+
+print ("{0} \n{1}".format(a//b, a/b))
